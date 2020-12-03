@@ -6,15 +6,21 @@ client.db = Eco.db; // quick.db
 client.ayar = require("./ayarlar.js");
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
-client.shop = {
-  laptop: {
+client.shop = { //market öğeleri buraya, cost ise ne kadar para ettiği
+  bilgisayar: {
     cost: 2000
   },
-  mobile: {
+  telefon: {
     cost: 1000
   },
-  pc: {
+  abone: {
     cost: 3000
+  },
+  minecraft: {
+    cost: 25000
+  },
+  pythonic: {
+    cost: 10000
   }
 };
 const fs = require("fs");
