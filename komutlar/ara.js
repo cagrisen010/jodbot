@@ -1,13 +1,5 @@
 exports.execute = async (client, message, args) => {
-  
-  let kazan = [
-    "win",
-    "lose"
-  ]
-var sonuc = kazan[Math.floor(Math.random() * kazan.length)];
-  
-  
-  let users = [
+    let users = [
         "Cüzdan",
         "Ekmek",
         "Air pod",
@@ -16,7 +8,6 @@ var sonuc = kazan[Math.floor(Math.random() * kazan.length)];
       "Buz Dolabı",
       "Pythonic"
     ];
-  let buy = client.eco.removeMoney(message.author.id, (Math.random() * 200) - 50)
     let amount = Math.floor(Math.random() * 200) + 50;
     let beg = await client.eco.beg(client.ecoAddUser, amount, { canLose: true, cooldown: 12000, customName: "search" });
     if (beg.onCooldown) return message.reply(`Bu kadarda beleşçi olunmaz, ${beg.time.minutes} dakika ve ${beg.time.seconds} saniye sonra geri gel.`);
@@ -25,7 +16,7 @@ var sonuc = kazan[Math.floor(Math.random() * kazan.length)];
 };
 
 exports.help = {
-    name: "casino",
-    aliases: ['casino'],
+    name: "ara",
+    aliases: ['ara'],
     usage: "ara"
 }
