@@ -5,7 +5,7 @@ exports.execute = async (client, message, args) => {
 let chance = Math.floor(Math.random() * 2)
 if(chance === 1) {
 message.reply(`You won`)
-        let beg = await client.eco.beg(client.ecoDelUser, amount, { canLose: true, cooldown: 12000, customName: "search" });
+        let beg = await client.eco.beg(client.ecoAddUser, -2000, { canLose: true, cooldown: 12000, customName: "search" });
 } else {
 message.reply(`You lost`)
 }
