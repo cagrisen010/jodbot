@@ -6,6 +6,14 @@ exports.execute = async (client, message, args) => {
   ]
 var sonuc = kazan[Math.floor(Math.random() * kazan.length)];
   
+  if (sonuc = "win") {
+      client.eco.removeMoney(message.author.id, (Math.random() * 200) - 50)
+  }
+    else (sonuc = "lose") {
+      
+    } 
+    
+   
   
   let users = [
         "Cüzdan",
