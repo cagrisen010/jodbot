@@ -29,11 +29,11 @@ fs.readdir("./events/", (err, files) => {
     });
 });
 
-fs.readdir("./commands/", (err, files) => {
+fs.readdir("./komutlar/", (err, files) => {
     if (err) return console.error(err);
     files.forEach(f => {
         if (!f.endsWith(".js")) return;
-        let command = require(`./commands/${f}`);
+        let command = require(`./komutlar/${f}`);
         client.commands.set(command.help.name, command);
         command.help.aliases.forEach(alias => {
             client.aliases.set(alias, command.help.name);
