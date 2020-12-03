@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 const Eco = require("quick.eco");
 client.eco = new Eco.Manager(); // quick.eco
 client.db = Eco.db; // quick.db
-client.config = require("./botConfig");
+client.ayar = require("./ayarlar.js");
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 client.shop = {
@@ -42,4 +42,4 @@ fs.readdir("./commands/", (err, files) => {
 });
 
 
-client.login(client.config.token);
+client.login(client.ayar.token);
