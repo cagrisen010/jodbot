@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js"
   },
-  "author": "Zero",
+  "author": "Paytonik",
   "license": "Nginx",
   "keywords": [
     "discord",

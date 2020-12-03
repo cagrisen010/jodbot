@@ -1,10 +1,9 @@
 module.exports.execute = async (client, message, args) => {
   
-  let kazanilacak = ["10", "-10"]
-    let amount = Math.floor(Math.random() * kazanilacak.lenght);
-    let work = client.eco.work(client.ecoAddUser, amount);
-    if (work.onCooldown) return message.reply(`Bu kadar fazla casino oynanılmaz ${work.time.minutes} dakika ve ${work.time.seconds} saniye sonra geri gel.`);
-    else return message.reply(`Yaşasın! Casinoda, **${work.amount}** 💸 kazandın. Şuanki paran: **${work.after}** 💸.`);
+  let kazanilacak = [10, 20, 30]
+    let amount = Math.floor(Math.random() * kazanilacak.lenght)
+    let beg = client.eco.beg(client.ecoAddUser, amount, { canLose: false });
+     return message.reply(`Yaşasın! Casinoda, **${beg.amount}** 💸 kazandın. Şuanki paran: **${beg.after}** 💸.`);
 };
 
 module.exports.help = {
