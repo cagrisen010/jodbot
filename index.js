@@ -21,6 +21,9 @@ client.shop = { //market öğeleri buraya, cost ise ne kadar para ettiği
   },
   pythonic: {
     cost: 10000
+  },
+    iphone12: {
+    cost: 1000
   }
 };
 const fs = require("fs");

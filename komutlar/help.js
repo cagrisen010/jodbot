@@ -13,6 +13,7 @@ const pythonic = new discord.MessageEmbed()
 .addField("e!para-duzenle", "insanların parasını duzenlersin")
 .addField("e!banka", "parana bakarsın")
 .addField("e!sıralama", "en çok parası olanları görürsün")
+.setColor("BLUE")
 .setFooter("pythonic,plasmic,zero");
 
 
