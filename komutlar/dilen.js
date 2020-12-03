@@ -9,6 +9,7 @@ exports.execute = async (client, message, args) => {
       "wently",
       "lynx",
       "perfect",
+      "swenlor",
       "yaman",
       "dilenci"
     ];
